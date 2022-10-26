@@ -7,6 +7,10 @@
     margin-right: auto;
   }
 
+  .nav__item:not(:last-child) {
+    margin-right: 54px;
+  }
+
   .about-us__text {
     max-width: 100%;
   }
@@ -19,7 +23,7 @@
   .about-container__left {
     margin: 0;
     margin-bottom: 30px;
-    width: calc(100% - 100px);
+    width: 100%;
     height: 624px;
     background-image: url("../img/about-us.jpg");
     background-position: center;
@@ -28,7 +32,7 @@
   }
 
   .about-container__right {
-    width: calc(100% - 100px);
+    width: 100%;
   }
 
   .stages-end__left {
@@ -37,6 +41,16 @@
 
   .stages-end__right {
     background-size: cover;
+  }
+
+  .footer__container {
+    justify-content: space-between;
+  }
+
+  .footer-middle {
+    width: calc(100% - 710px);
+    min-width: 510px;
+    margin-right: 0;
   }
 
   .footer-left {
@@ -143,13 +157,9 @@
     height: 642px;
   }
 
-  .about-container__right {
-    width: 925px;
-  }
-
   .about-content__card {
     padding-left: 74px;
-    width: 920px;
+    width: 100%;
   }
 
   .about-content__text {
@@ -227,6 +237,10 @@
     margin-right: 129px;
   }
 
+  .footer-middle {
+    width: 100%;
+  }
+
   .form__input {
     min-width: 540px;
   }
@@ -244,22 +258,13 @@
 }
 
 @media (max-width: 1002px) {
-  .about-container__left {
-    width: 668px;
-  }
-
   .about-container__left img {
     width: 100%;
     height: 100%;
   }
 
-  .about-container__right {
-    width: 668px;
-  }
-
   .about-content__card {
     padding: 35px 46px 35px 40px;
-    width: 668px;
   }
 
   .about-content__icon {
@@ -303,8 +308,22 @@
     flex-direction: column-reverse;
   }
 
+  .footer-middle {
+    width: 100%;
+    margin-right: 0;
+  }
+
   .footer-middle__form {
     margin-bottom: 50px;
+  }
+
+  .form__input {
+    width: 100%;
+  }
+
+  .form__textarea {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -424,11 +443,21 @@
     padding-bottom: 46px;
   }
 
+  .footer-middle {
+    width: calc(100% - 128px);
+  }
+
+  .footer-middle__form {
+    width: 100%;
+  }
+
   .form__input {
+    width: 100%;
     margin-bottom: 24px;
   }
 
   .form__textarea {
+    width: 100%;
     margin-bottom: 34px;
   }
 
@@ -529,6 +558,10 @@
     width: calc(100% - 50px);
   }
 
+  .footer__container {
+    align-items: center;
+  }
+
   .footer-middle {
     margin-right: 0;
   }
@@ -542,6 +575,7 @@
   }
 
   .footer-middle__form {
+    width: 100%;
     align-items: center;
   }
 
