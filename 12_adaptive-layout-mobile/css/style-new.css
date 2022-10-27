@@ -84,7 +84,7 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 85px;
+  padding: 0 75px;
   max-width: 1920px;
 }
 
@@ -127,14 +127,15 @@ body {
 }
 
 .header__container {
-  align-items: center
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__logo {
   width: 225px;
   height: 72px;
   margin: 0;
-  margin-right: 546px;
+  margin-right: auto;
   display: block;
 }
 
@@ -145,12 +146,12 @@ body {
 }
 
 .header__nav {
-  margin-right: auto;
+  margin-right: 261px;
   padding: 25px 0;
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 83px;
+  margin-right: 85px;
 }
 
 .nav__link {
@@ -263,7 +264,7 @@ body {
 
 /* about-us */
 .about-us {
-  padding-top: 25px;
+  padding-top: 34px;
 }
 
 .about-us__title {
@@ -393,7 +394,8 @@ body {
 
 /* stages */
 .stages {
-  padding-bottom: 108px;
+  padding-top: 13px;
+  padding-bottom: 114px;
 }
 
 .stages-start__title {
@@ -510,11 +512,12 @@ body {
   background-image: url('../img/stages.jpg');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* faq */
 .faq {
-  padding-bottom: 94px;
+  padding-bottom: 100px;
 }
 
 .faq__title {
@@ -611,20 +614,21 @@ body {
 
 .footer__container {
   flex-direction: row;
+  justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 45px;
 }
 
 .footer-left {
   min-width: 252px;
-  margin-right: 340px;
+  margin-right: 101px;
 }
 
 .footer__logo {
   width: 224px;
   height: 72px;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 21px;
   display: block;
 }
 
@@ -702,7 +706,6 @@ body {
 
 .footer-middle {
   min-width: 570px;
-  margin-right: 230px;
 }
 
 .footer-middle__title {
@@ -726,7 +729,7 @@ body {
   min-height: 60px;
   padding: 14px;
   padding-left: 24px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   color: var(--white-color);
   background-color: #414141;
   border-radius: 16px;
@@ -819,6 +822,7 @@ body {
 }
 
 .footer-right {
+  width: 20%;
   padding-top: 86px;
 }
 

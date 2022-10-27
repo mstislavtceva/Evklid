@@ -7,6 +7,10 @@
     margin-right: auto;
   }
 
+  .header__nav {
+    margin-right: auto;
+  }
+
   .nav__item:not(:last-child) {
     margin-right: 54px;
   }
@@ -144,7 +148,7 @@
 
   .about-us {
     padding-top: 37px;
-    padding-bottom: 82px;
+    padding-bottom: 72px;
   }
 
   .about-us__text {
@@ -184,7 +188,7 @@
   }
 
   .stages-start__list {
-    margin-bottom: 55px;
+    margin-bottom: 52px;
   }
 
   .stages-text__descr {
@@ -194,7 +198,6 @@
   .stages-end__left {
     max-width: 450px;
     margin-right: 38px;
-
   }
 
   .stages-end__right {
@@ -247,7 +250,7 @@
 
   .form__textarea {
     padding-top: 26px;
-    margin-bottom: 38px;
+    margin-bottom: 32px;
     max-width: 540px;
   }
 
@@ -350,7 +353,7 @@
   }
 
   .about-us {
-    padding-bottom: 45px;
+    padding-bottom: 31px;
   }
 
   .about-us__text {
@@ -754,6 +757,7 @@
 
   .about-us {
     padding-top: 61px;
+    padding-bottom: 46px;
   }
 
   .about-content__card {
@@ -766,6 +770,7 @@
 
   .about-container__left {
     margin-bottom: 231px;
+    border-radius: 15px;
     height: 200px;
   }
 
