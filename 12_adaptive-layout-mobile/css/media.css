@@ -27,10 +27,10 @@
   .about-container__left {
     margin: 0;
     margin-bottom: 30px;
+    padding-bottom: 55%;
     width: 100%;
-    height: 624px;
     background-image: url("../img/about-us.jpg");
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -158,7 +158,7 @@
 
   .about-container__left {
     width: 100%;
-    height: 642px;
+    padding-bottom: 69.5%;
   }
 
   .about-content__card {
@@ -261,11 +261,6 @@
 }
 
 @media (max-width: 1002px) {
-  .about-container__left img {
-    width: 100%;
-    height: 100%;
-  }
-
   .about-content__card {
     padding: 35px 46px 35px 40px;
   }
@@ -361,8 +356,9 @@
   }
 
   .about-container__left {
+    padding-bottom: 97.5%;
+    border-radius: 23px;
     width: 100%;
-    min-height: 651px;
   }
 
   .about-container__inner {
@@ -488,19 +484,15 @@
   }
 
   .about-container__left {
-    position: initial;
-    margin-bottom: 225px;
-    min-height: auto;
-    height: 400px;
+    padding-bottom: 590px;
+    background-size: contain;
+    background-position: top;
   }
 
   .about-container__inner {
     flex-direction: column;
-    position: initial;
     padding: 0;
-    padding-top: 11px;
     background: none;
-    transform: translateY(404px);
   }
 
   .container-inner__text {
@@ -666,16 +658,6 @@
     line-height: 28px;
   }
 
-  .about-container__left {
-    margin-bottom: 195px;
-    min-height: 200px;
-    height: 100%;
-  }
-
-  .about-container__inner {
-    transform: translateY(194px);
-  }
-
   .about-us__text {
     margin-bottom: 10px;
   }
@@ -769,13 +751,8 @@
   }
 
   .about-container__left {
-    margin-bottom: 231px;
+    padding-bottom: 402px;
     border-radius: 15px;
-    height: 200px;
-  }
-
-  .about-container__inner {
-    padding-top: 13px;
   }
 
   .container-inner__text {
