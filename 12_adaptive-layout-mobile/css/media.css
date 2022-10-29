@@ -25,9 +25,8 @@
   }
 
   .about-container__left {
-    margin: 0;
-    margin-bottom: 30px;
-    padding-bottom: 55%;
+    margin: 0 0 30px 0;
+    padding-top: 50%;
     width: 100%;
     background-image: url("../img/about-us.jpg");
     background-position: center center;
@@ -37,13 +36,6 @@
 
   .about-container__right {
     width: 100%;
-  }
-
-  .stages-end__left {
-    margin-right: 12px;
-  }
-
-  .stages-end__right {
     background-size: cover;
   }
 
@@ -158,7 +150,7 @@
 
   .about-container__left {
     width: 100%;
-    padding-bottom: 69.5%;
+    padding-top: 48.1%;
   }
 
   .about-content__card {
@@ -356,15 +348,16 @@
   }
 
   .about-container__left {
-    padding-bottom: 97.5%;
+    padding-top: 67.9%;
     border-radius: 23px;
     width: 100%;
   }
 
   .about-container__inner {
+    padding-bottom: 36px;
     padding-right: 42px;
     padding-left: 40px;
-    padding-top: 56px;
+    padding-top: 32px;
   }
 
   .container-inner__text {
@@ -484,7 +477,8 @@
   }
 
   .about-container__left {
-    padding-bottom: 590px;
+    padding-top: 73.5%;
+    margin-bottom: 10px;
     background-size: contain;
     background-position: top;
   }
@@ -751,8 +745,9 @@
   }
 
   .about-container__left {
-    padding-bottom: 402px;
     border-radius: 15px;
+    padding-top: 71.5%;
+    margin-bottom: 32px;
   }
 
   .container-inner__text {
