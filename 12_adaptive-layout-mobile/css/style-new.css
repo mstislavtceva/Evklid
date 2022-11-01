@@ -271,13 +271,10 @@ body {
   margin-bottom: 18px;
 }
 
-.about-us__text {
-  max-width: 1235px;
-  margin-bottom: 47px;
-}
-
 .about-text__descr {
   margin: 0;
+  margin-bottom: 47px;
+  max-width: 1235px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -522,7 +519,7 @@ body {
 .faq__item {
   position: relative;
   margin-top: -1px;
-  padding: 15px 0;
+  padding: 39px 0;
   padding-right: 75px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid var(--grey-color);
@@ -558,6 +555,7 @@ body {
 }
 
 .item-question__title {
+  margin: 0;
   max-width: calc(100% - 50px);
   font-weight: 700;
   font-size: 24px;
