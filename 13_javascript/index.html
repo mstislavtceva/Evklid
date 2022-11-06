@@ -75,7 +75,7 @@
             <button class="hero__btn btn-reset">Заказать расчёт</button>
           </div>
         </div>
-        </div>
+      </div>
     </section>
     <section id="about-us" class="about-us section-offset">
       <div class="container about-us__container">
@@ -158,28 +158,90 @@
       <div class="container stages__top stages-start">
         <h2 class="stages-start__title section-title">Как мы&nbsp;работаем</h2>
         <ul class="stages-start__list list-reset flex">
-          <li class="stages-start__item"><button class="btn-reset stages-start__link">1&nbsp;шаг</button></li>
-          <li class="stages-start__item"><button class="btn-reset stages-start__link">2&nbsp;шаг</button></li>
-          <li class="stages-start__item"><button class="btn-reset stages-start__link">3&nbsp;шаг</button></li>
-          <li class="stages-start__item"><button class="btn-reset stages-start__link">4&nbsp;шаг</button></li>
+          <li class="stages-start__item"><button class="btn-reset stages-start__link stages-start__link--active"
+              data-path="one">1&nbsp;шаг</button></li>
+          <li class="stages-start__item"><button class="btn-reset stages-start__link"
+              data-path="two">2&nbsp;шаг</button></li>
+          <li class="stages-start__item"><button class="btn-reset stages-start__link"
+              data-path="three">3&nbsp;шаг</button></li>
+          <li class="stages-start__item"><button class="btn-reset stages-start__link"
+              data-path="four">4&nbsp;шаг</button></li>
         </ul>
-        <div class="stages__bottom stages-end flex">
-          <div class="stages-end__left stages-text">
-            <h3 class="stages-text__title container-title">Проводим консультацию</h3>
-            <p class="stages-text__descr container-descr">
-              Влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума над эмоциями.
-              В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут
-              объективно рассмотрены соответствующими инстанциями.
-              А&nbsp;также представители современных социальных резервов, инициированные исключительно синтетически,
-              ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные
-              с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
-              Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные
-              особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.
-            </p>
-            <button class="stages-text__btn-orange btn-reset btn">Подробнее</button>
-            <button class="stages-text__btn-black btn-reset btn">Договор</button>
+        <div class="stages__bottom stages-text flex">
+          <div class="stages-text__info">
+            <div class="stages-text__tabs stages-text__tabs--active" data-target="one">
+              <div class="stages-text__content">
+                <h3 class="stages-text__title container-title">Проводим консультацию</h3>
+                <p class="stages-text__descr container-descr">
+                  Влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума над эмоциями.
+                  В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут
+                  объективно рассмотрены соответствующими инстанциями.
+                  А&nbsp;также представители современных социальных резервов, инициированные исключительно синтетически,
+                  ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные
+                  с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых
+                  исследований.
+                  Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно
+                  интересные
+                  особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.
+                </p>
+                <button class="stages-text__btn-orange btn-reset btn">Подробнее</button>
+                <button class="stages-text__btn-black btn-reset btn">Договор</button>
+              </div>
+              <div class="stages-end__right-tabs"></div>
+            </div>
+            <div class="stages-text__tabs" data-target="two">
+              <div class="stages-text__content">
+                <h3 class="stages-text__title container-title">Составляем смету</h3>
+                <p class="stages-text__descr container-descr">
+                  Внедрения и&nbsp;модернизации приоритизации разума над эмоциями. В&nbsp;рамках спецификации
+                  современных
+                  стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими
+                  инстанциями. А&nbsp;также представители современных социальных резервов, инициированные исключительно
+                  синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины,
+                  реплицированные с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии
+                  независимых исследований.
+                </p>
+                <button class="stages-text__btn-orange btn-reset btn">Подробнее</button>
+                <button class="stages-text__btn-black btn-reset btn">Договор</button>
+              </div>
+              <div class="stages-end__right-tabs-2"></div>
+            </div>
+            <div class="stages-text__tabs" data-target="three">
+              <div class="stages-text__content">
+                <h3 class="stages-text__title container-title">Привлекаем подрядчиков</h3>
+                <p class="stages-text__descr container-descr">
+                  Идейные соображения высшего порядка, а&nbsp;также новая модель организационной деятельности требует
+                  анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой
+                  аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта
+                  напрямую зависит от&nbsp;дальнейших направлений развития. Разнообразный и&nbsp;богатый опыт говорит
+                  нам,
+                  что новая модель организационной деятельности говорит о&nbsp;возможностях системы массового участия.
+                  Принимая во&nbsp;внимание показатели успешности, постоянное информационно-пропагандистское обеспечение
+                  нашей деятельности позволяет выполнить важные задания по&nbsp;разработке прогресса профессионального
+                  сообщества.
+                </p>
+                <button class="stages-text__btn-orange btn-reset btn">Подробнее</button>
+                <button class="stages-text__btn-black btn-reset btn">Договор</button>
+              </div>
+              <div class="stages-end__right-tabs-3"></div>
+            </div>
+            <div class="stages-text__tabs" data-target="four">
+              <div class="stages-text__content">
+                <h3 class="stages-text__title container-title">Инспектируем все этапы работ</h3>
+                <p class="stages-text__descr container-descr">
+                  Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
+                  факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений
+                  развития.
+                  Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит
+                  о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности позволяет.
+                </p>
+                <button class="stages-text__btn-orange btn-reset btn">Подробнее</button>
+                <button class="stages-text__btn-black btn-reset btn">Договор</button>
+              </div>
+              <div class="stages-end__right-tabs-4"></div>
+            </div>
           </div>
-          <div class="stages-end__right"></div>
         </div>
       </div>
     </section>
