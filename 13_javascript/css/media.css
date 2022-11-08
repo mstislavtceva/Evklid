@@ -148,10 +148,6 @@
     z-index: 1200;
   }
 
-  /* .burger--active:focus {
-    outline: none;
-  } */
-
   .burger--active
   .burger__line:nth-child(2) {
     opacity: 0;
@@ -642,6 +638,11 @@
   .container-inner__btn {
     align-self: start;
     color: var(--orange-color);
+  }
+
+  .container-inner__btn:focus {
+    color: #FFFFFF;
+    transition: color 0.3s ease-in-out;
   }
 
   .about-container__right {
