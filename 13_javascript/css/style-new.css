@@ -122,12 +122,12 @@ body {
 .header {
   border-radius: 0px 0px 32px 32px;
   padding: 13px 0;
+  position: relative;
   background-color: var(--white-color);
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
 }
 
 .header__container {
-  position: relative;
   align-items: center;
   justify-content: space-between;
 }
@@ -250,7 +250,7 @@ body {
   right: 0;
   top: -100%;
   visibility: hidden;
-  padding: 16px 13px 16px 32px;
+  padding: 16px 483px 16px 32px;
   width: 28%;
   z-index: 1005;
   border-radius: 24px;
@@ -260,7 +260,7 @@ body {
 }
 
 .search-form--active {
-  top: 10%;
+  top: 19%;
   visibility: visible;
 }
 
@@ -314,11 +314,25 @@ body {
   height: 100%;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.swiper-pic-1 {
+  background-image: url('../img/hero-1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper-pic-2 {
+  background-image: url('../img/hero-2.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper-pic-3 {
+  background-image: url('../img/hero-3.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
@@ -767,7 +781,7 @@ body {
 }
 
 .is-active.is-active.is-active svg {
-  top: 10%;
+  top: 55px;
   transform: rotate(45deg);
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
 }
@@ -786,7 +800,7 @@ body {
   position: absolute;
   margin-top: -25px;
   right: 0;
-  top: 50%;
+  top: 55px;
 }
 
 .faq__item svg ellipse,

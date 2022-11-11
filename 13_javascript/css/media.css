@@ -120,6 +120,28 @@
     margin-right: auto;
     width: 30px;
     height: 23px;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out, outline 0.3s ease-in-out;
+  }
+
+  .burger:active .burger__line:first-child {
+    background-color: #E1670E;
+  }
+
+  .burger:active .burger__line:nth-child(2) {
+    width: 25px;
+    transform: translateX(-10px);
+    background-color: #E1670E;
+  }
+
+  .burger:active .burger__line:last-child {
+    width: 18px;
+    transform: translateX(-3px);
+    background-color: #E1670E;
+  }
+
+  .burger:focus {
+    outline-offset: 2px;
+    outline: 2px solid #FF9900;
   }
 
   .burger__line {
@@ -129,6 +151,7 @@
     height: 3px;
     background-color: #000;
     transform: translateX(-50%);
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out, outline 0.3s ease-in-out;
   }
 
   .burger__line:nth-child(1) {
@@ -146,59 +169,34 @@
 
   .burger--active {
     z-index: 1200;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
   }
 
-  .burger--active
-  .burger__line:nth-child(2) {
+  .burger--active.burger--active.burger--active:focus {
+    outline: none;
+  }
+
+  .burger--active .burger__line:nth-child(2) {
     opacity: 0;
   }
 
-  .burger--active
-  .burger__line:first-child {
+  .burger--active .burger__line:first-child {
     left: 0;
     top: 47%;
     transform: rotate(45deg);
     transform-origin: center;
-    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
   }
 
-  .burger--active
-  .burger__line:last-child {
+  .burger--active .burger__line:last-child {
     bottom: auto;
     left: 0;
     top: 47%;
     transform: rotate(-45deg);
     transform-origin: center;
-    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
   }
 
-  .burger:focus {
-    outline-offset: 2px;
-    outline: 2px solid #FF9900;
-    transition: outline 0.3s ease-in-out;
-  }
-
-  .burger:active {
-    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-
-  .burger:active
-  .burger__line:first-child {
-    background-color: #E1670E;
-  }
-
-  .burger:active
-  .burger__line:nth-child(2) {
-    width: 25px;
-    transform: translateX(-10px);
-    background-color: #E1670E;
-  }
-
-  .burger:active
-  .burger__line:last-child {
-    width: 18px;
-    transform: translateX(-3px);
-    background-color: #E1670E;
+  .search-form--active {
+    top: 20%;
   }
 
   .container {
@@ -316,10 +314,6 @@
     max-width: 630px;
   }
 
-  .is-active.is-active.is-active svg {
-    top: 6%;
-  }
-
   .ac p {
     max-width: calc(100% - 100px);
   }
@@ -409,6 +403,18 @@
 @media (max-width: 768px) {
   .header {
     padding: 11px 0;
+  }
+
+  .search-form {
+    padding-right: 390px;
+  }
+
+  .search-form--active {
+    top: 8%;
+  }
+
+  .search-form__input {
+    padding-right: 100px;
   }
 
   .hero {
@@ -559,12 +565,6 @@
     line-height: 28px;
   }
 
-  .is-active.is-active.is-active svg {
-    top: 8%;
-    width: 40px;
-    height: 40px;
-  }
-
   .footer {
     padding-bottom: 46px;
   }
@@ -595,6 +595,14 @@
 @media (max-width: 690px) {
   .slide-content {
     padding: 40px 39px 90px 40px;
+  }
+
+  .search-form {
+    padding-right: 330px;
+  }
+
+  .search-form__input {
+    padding-right: 45px;
   }
 
   .hero__title {
@@ -688,12 +696,6 @@
     line-height: 21px;
   }
 
-  .is-active.is-active.is-active svg {
-    top: 10%;
-    width: 30px;
-    height: 30px;
-  }
-
   .footer__container {
     align-items: center;
   }
@@ -776,6 +778,18 @@
     padding: 52px 21px 20px 21px;
   }
 
+  .search-form {
+    padding: 10px 290px 10px 19px;
+  }
+
+  .search-form--active {
+    top: 7%;
+  }
+
+  .search-form__input {
+    padding-right: 2px;
+  }
+
   .hero__title {
     font-size: 20px;
     line-height: 24px;
@@ -849,10 +863,6 @@
     line-height: 15px;
   }
 
-  .is-active.is-active.is-active svg {
-    top: 8%;
-  }
-
 }
 
 @media (max-width: 320px) {
@@ -879,6 +889,10 @@
   .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
+  }
+
+  .search-form--active {
+    top: 15%;
   }
 
   .hero__title {
@@ -1003,7 +1017,7 @@
   }
 
   .is-active.is-active.is-active svg {
-    top: 7%;
+    transform: translateY(10px);
   }
 
   .ac p {
