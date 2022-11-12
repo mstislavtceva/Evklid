@@ -1,3 +1,14 @@
+@media (min-width: 1920px) {
+  .search-form {
+    padding: 16px 490px 16px 32px;
+    width: 18%;
+  }
+
+  .header__container {
+    position: relative;
+  }
+}
+
 @media (max-width: 1610px) {
   .header__container {
     justify-content: space-between;
@@ -121,6 +132,10 @@
     width: 30px;
     height: 23px;
     transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out, outline 0.3s ease-in-out;
+  }
+
+  .burger:hover .burger__line {
+    background-color: #E1670E;
   }
 
   .burger:active .burger__line:first-child {
