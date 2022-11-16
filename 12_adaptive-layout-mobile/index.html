@@ -31,33 +31,36 @@
           <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
         </ul>
       </nav>
-      <svg class="header__search" width="24" height="24" viewBox="0 0 24 24" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)"
-          fill="black" />
-        <path
-          d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
-          stroke="black" stroke-width="2" />
-      </svg>
+      <button class="btn-reset">
+        <svg class="header__search" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect width="7.56126" height="1.89031"
+            transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black" />
+          <path
+            d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+            stroke="black" stroke-width="2" />
+        </svg>
+      </button>
 
     </div>
   </header>
 
   <main class="main">
-    <section class="container hero">
-      <div class="hero__container">
-        <h1 class="hero__title">Проектные решения любой сложности</h1>
-        <p class="hero__descr">
-          Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день
-          остаются уделом проектантов
-        </p>
-        <button class="hero__btn btn-reset">Заказать расчёт</button>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__container-picture">
+          <h1 class="hero__title">Проектные решения любой сложности</h1>
+          <p class="hero__descr">
+            Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день
+            остаются уделом проектантов
+          </p>
+          <button class="hero__btn btn-reset">Заказать расчёт</button>
+        </div>
       </div>
     </section>
     <section id="about-us" class="about-us section-offset">
       <div class="container about-us__container">
         <h2 class="about-us__title section-title">О нас</h2>
-        <div class="about-us__text about-text">
           <p class="about-text__descr">
             Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого
             ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности
@@ -68,18 +71,16 @@
             участниками в&nbsp;отношении поставленных задач. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что
             высококачественный прототип будущего проекта способствует повышению качества экспериментов.
           </p>
-        </div>
         <div class="about-content about-container">
-          <figure class="about-container__left">
-            <img src="../11_adaptive-layout-desktop/img/about-us.jpg" alt="Изображение сайта Евклид">
-            <figcaption class="about-container__inner container-inner flex">
+          <div class="about-container__left">
+            <div class="about-container__inner container-inner flex">
               <p class="container-inner__text">
                 Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке
                 и&nbsp;реализации новых принципов
               </p>
               <button class="container-inner__btn btn btn-reset">Подробнее</button>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
           <div class="about-container__right about-content">
             <div class="about-content__card">
               <div class="about-content__icon">
@@ -122,7 +123,8 @@
                 </svg>
               </div>
               <div class="about-content__text card-content">
-                <h3 class="card-content__title container-title container-title-spec">В&nbsp;своём стремлении повысить</h3>
+                <h3 class="card-content__title container-title container-title-spec">В&nbsp;своём стремлении повысить
+                </h3>
                 <p class="card-content__descr container-descr">
                   Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный
                   эксперимент проверки прогресса профессионального сообщества
@@ -136,12 +138,12 @@
     <section id="stages" class="stages section-offset">
       <div class="container stages__top stages-start">
         <h2 class="stages-start__title section-title">Как мы&nbsp;работаем</h2>
-          <ul class="stages-start__list list-reset flex">
-            <li class="stages-start__item"><a href="#" class="stages-start__link">1&nbsp;шаг</a></li>
-            <li class="stages-start__item"><a href="#" class="stages-start__link">2&nbsp;шаг</a></li>
-            <li class="stages-start__item"><a href="#" class="stages-start__link">3&nbsp;шаг</a></li>
-            <li class="stages-start__item"><a href="#" class="stages-start__link">4&nbsp;шаг</a></li>
-          </ul>
+        <ul class="stages-start__list list-reset flex">
+          <li class="stages-start__item"><button class="btn-reset stages-start__link">1&nbsp;шаг</button></li>
+          <li class="stages-start__item"><button class="btn-reset stages-start__link">2&nbsp;шаг</button></li>
+          <li class="stages-start__item"><button class="btn-reset stages-start__link">3&nbsp;шаг</button></li>
+          <li class="stages-start__item"><button class="btn-reset stages-start__link">4&nbsp;шаг</button></li>
+        </ul>
         <div class="stages__bottom stages-end flex">
           <div class="stages-end__left stages-text">
             <h3 class="stages-text__title container-title">Проводим консультацию</h3>
@@ -176,7 +178,8 @@
             </svg>
           </li>
           <li class="faq__item item-question">
-            <h3 class="item-question__title question-spec">У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его доработать /
+            <h3 class="item-question__title question-spec">У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его
+              доработать /
               реализовать?</h3>
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <ellipse cx="25" cy="25" rx="25" ry="25" fill="#CACACA" />
@@ -186,7 +189,8 @@
             </svg>
           </li>
           <li class="faq__item item-question">
-            <h3 class="item-question__title item-spec-3">Я&nbsp;выбираю между разными компаниями. В&nbsp;чём ваше отличие?</h3>
+            <h3 class="item-question__title item-spec-3">Я&nbsp;выбираю между разными компаниями. В&nbsp;чём ваше
+              отличие?</h3>
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <ellipse cx="25" cy="25" rx="25" ry="25" fill="#CACACA" />
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -195,7 +199,8 @@
             </svg>
           </li>
           <li class="faq__item item-question">
-            <h3 class="item-question__title question-spec-two">Могу&nbsp;ли я&nbsp;делегировать вам работу&nbsp;/ согласование
+            <h3 class="item-question__title question-spec-two">Могу&nbsp;ли я&nbsp;делегировать вам работу&nbsp;/
+              согласование
               с&nbsp;подрядчиком / организацией?</h3>
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <ellipse cx="25" cy="25" rx="25" ry="25" fill="#CACACA" />
@@ -220,7 +225,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer__container footer-content flex">
+    <div class="container footer__container flex">
       <div class="footer-content__left footer-left">
         <a href="#" class="footer__logo"><img src="img/footer-logo.svg" alt="Логотип"></a>
         <ul class="footer-left__list list-reset">
