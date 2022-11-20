@@ -6,12 +6,15 @@ document.addEventListener('DOMContentLoaded', (e) => {
     loop: true,
     spaceBetween: 0,
     autoplay: {
-        delay: 5000,
+      delay: 5000,
     },
     pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    a11y: {
+      paginationBulletMessage: 'На следующий слайд {{index}}'
     }
   });
 
@@ -20,13 +23,13 @@ document.addEventListener('DOMContentLoaded', (e) => {
   const tabsContent = document.querySelectorAll('.stages-text__tabs');
 
   tabsBtn.forEach(function (element) {
-    element.addEventListener ('click', function (e) {
+    element.addEventListener('click', function (e) {
       const path = e.currentTarget.dataset.path;
 
-      tabsBtn.forEach(function(btn){ btn.classList.remove('stages-start__link--active');});
+      tabsBtn.forEach(function (btn) { btn.classList.remove('stages-start__link--active'); });
       e.currentTarget.classList.add('stages-start__link--active');
 
-      tabsContent.forEach(function(element){ element.classList.remove('stages-text__tabs--active');});
+      tabsContent.forEach(function (element) { element.classList.remove('stages-text__tabs--active'); });
       document.querySelector(`[data-target="${path}"]`).classList.add('stages-text__tabs--active');
 
       console.log('Hey!!!');
@@ -41,7 +44,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
   const menu = document.querySelector('.header__nav');
   const menuLinks = document.querySelectorAll('.nav__link');
 
-  burger.addEventListener('click', function() {
+  burger.addEventListener('click', function () {
     burger.classList.toggle('burger--active');
     menu.classList.toggle('header__nav--active');
 
@@ -50,7 +53,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
   });
 
   menuLinks.forEach(function (el) {
-    el.addEventListener('click', function() {
+    el.addEventListener('click', function () {
       burger.classList.remove('burger--active');
       menu.classList.remove('header__nav--active');
 
