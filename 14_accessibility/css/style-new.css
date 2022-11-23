@@ -722,8 +722,8 @@ body {
   border-top: 1px solid transparent;
   border-bottom: 1px solid var(--grey-color);
   font: inherit;
-  transition: border-color 0.3s ease-in-out;
   z-index: 5;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .ac .ac-trigger:after {
@@ -735,6 +735,8 @@ body {
 }
 
 .ac .ac-trigger:focus {
+  outline: none;
+  z-index: 7;
   border-color: var(--orange-color);
 }
 
