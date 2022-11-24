@@ -78,6 +78,10 @@ body {
   cursor: pointer;
 }
 
+button::-moz-focus-inner {
+  border: 0;
+}
+
 .flex {
   display: flex;
 }
@@ -138,6 +142,12 @@ body {
   margin: 0;
   margin-right: auto;
   display: block;
+  transition: outline 0.3s ease-in-out;
+}
+
+.header__logo:focus {
+  outline-offset: 2px;
+  outline: 2px solid var(--orange-color);
 }
 
 .header__logo_img {
@@ -202,6 +212,7 @@ body {
   top: 28px;
   z-index: 1004;
   transform: translateY(-25px);
+  transition: outline 0.3s ease-in-out;
 }
 
 .header__search:hover {
@@ -214,6 +225,10 @@ body {
 
 .header__search:hover svg rect {
   fill: var(--orange-color);
+}
+
+.header__search:focus {
+  outline: none;
 }
 
 .header__search:focus svg {
@@ -286,6 +301,13 @@ body {
 
 .search-form__send {
   margin-right: 20px;
+}
+
+.search-form__send:focus,
+.search-form__close:focus {
+  outline-offset: 2px;
+  outline: 2px solid var(--orange-color);
+  transition: outline 0.3s ease-in-out;
 }
 
 
@@ -664,21 +686,20 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: var(--white-color);
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .stages-text__btn-orange:focus {
   background-color: var(--light-orange-color);
-  transition: background-color 0.3s ease-in-out;
+  outline: none;
 }
 
 .stages-text__btn-orange:hover {
   background-color: var(--light-orange-color);
-  transition: background-color 0.3s ease-in-out;
 }
 
 .stages-text__btn-orange:active {
   background-color: var(--strong-orange-color);
-  transition: background-color 0.3s ease-in-out;
 }
 
 .stages-text__btn-black {
@@ -689,7 +710,11 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: var(--black-color);
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.stages-text__btn-black:focus {
+  outline: none;
 }
 
 .stages-text__btn-black:focus,
@@ -856,6 +881,12 @@ body {
   margin: 0;
   margin-bottom: 21px;
   display: block;
+  transition: outline 0.3s ease-in-out;
+}
+
+.footer__logo:focus {
+  outline-offset: 2px;
+  outline: 2px solid var(--orange-color);
 }
 
 .footer__logo img {
@@ -900,6 +931,27 @@ body {
   margin-right: 25px;
 }
 
+.social-link:focus {
+  outline: none;
+}
+
+.social-link svg {
+  transition: outline 0.3s ease-in-out;
+}
+
+.social-link:focus svg {
+  outline-offset: 2px;
+  outline: 2px solid var(--orange-color);
+}
+
+.social-link:hover svg {
+  outline: none;
+}
+
+.social-link:active svg {
+  outline: none;
+}
+
 .social-link svg path {
   fill: #666666;
   transition: fill 0.3s ease-in-out;
@@ -915,19 +967,6 @@ body {
 
 .social-link:active svg path {
   fill: var(--strong-orange-color);
-}
-
-.social-link:focus {
-  outline-offset: 2px;
-  outline: 2px solid var(--orange-color);
-}
-
-.social-link:hover {
-  outline: none;
-}
-
-.social-link:active {
-  outline: none;
 }
 
 .footer-middle {
@@ -971,12 +1010,13 @@ body {
   color: var(--white-color);
   background-color: #414141;
   border-radius: 16px;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .form__textarea:focus,
 .form__input:focus {
   background-color: var(--strong-grey-color);
+  outline: none;
 }
 
 .form__textarea:hover,
@@ -1004,21 +1044,20 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: var(--white-color);
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .form__btn:focus {
   background-color: var(--light-orange-color);
-  transition: background-color 0.3s ease-in-out;
+  outline: none;
 }
 
 .form__btn:hover {
   background-color: var(--light-orange-color);
-  transition: background-color 0.3s ease-in-out;
 }
 
 .form__btn:active {
   background-color: var(--strong-orange-color);
-  transition: background-color 0.3s ease-in-out;
 }
 
 .check {
@@ -1033,8 +1072,8 @@ body {
 
 .check__input {
   position: absolute;
-  -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
 }
 
