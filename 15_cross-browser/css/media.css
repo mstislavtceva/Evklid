@@ -429,7 +429,7 @@
   }
 
   .search-form__input {
-    padding-right: 100px;
+    padding-right: 90px;
   }
 
   .hero {
@@ -617,7 +617,7 @@
   }
 
   .search-form__input {
-    padding-right: 45px;
+    padding-right: 25px;
   }
 
   .hero__title {
@@ -803,6 +803,16 @@
 
   .search-form__input {
     padding-right: 2px;
+  }
+
+  .search-form__send {
+    margin-right: 10px;
+  }
+
+  .search-form__close svg,
+  .search-form__send svg {
+    width: 18px;
+    height: 18px;
   }
 
   .hero__title {
