@@ -1075,6 +1075,7 @@ button::-moz-focus-inner {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+  opacity: 0;
 }
 
 .check__input:focus+.check__box {
